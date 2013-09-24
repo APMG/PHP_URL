@@ -138,10 +138,10 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-2013552432"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-2004446035"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-2013552432" class="accordion-body collapse in">
+            <div id="namespace-2004446035" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                     
@@ -267,12 +267,14 @@
             <a id="property_host" name="property_host" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$host</h3>
-                <pre class="signature">$host</pre>
-                <p><em></em></p>
+                <pre class="signature">$host : string</pre>
+                <p><em>The host/domain name.</em></p>
                 
 
 
-                            </article>
+                                <h4>Type</h4>
+                string
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -290,12 +292,14 @@
             <a id="property_scheme" name="property_scheme" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$scheme</h3>
-                <pre class="signature">$scheme</pre>
-                <p><em></em></p>
+                <pre class="signature">$scheme : string</pre>
+                <p><em>The URL scheme, such as http, https, et cetera.</em></p>
                 
 
 
-                            </article>
+                                <h4>Type</h4>
+                string
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -313,12 +317,14 @@
             <a id="property_path" name="property_path" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$path</h3>
-                <pre class="signature">$path</pre>
-                <p><em></em></p>
+                <pre class="signature">$path : string</pre>
+                <p><em>The URL path. Should begin with a slash.</em></p>
                 
 
 
-                            </article>
+                                <h4>Type</h4>
+                string
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -336,12 +342,14 @@
             <a id="property_query" name="property_query" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$query</h3>
-                <pre class="signature">$query</pre>
-                <p><em></em></p>
-                
+                <pre class="signature">$query : mixed[]</pre>
+                <p><em>A keyed list of query strings.</em></p>
+                <p>Can be set directly or via the addQueryString() and removeQueryString() methods. If the format array('key' => 'value'). The value can be an array.</p>
 
 
-                            </article>
+                                <h4>Type</h4>
+                mixed[]
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -359,12 +367,14 @@
             <a id="property_port" name="property_port" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$port</h3>
-                <pre class="signature">$port</pre>
-                <p><em></em></p>
+                <pre class="signature">$port : integer</pre>
+                <p><em>The port number</em></p>
                 
 
 
-                            </article>
+                                <h4>Type</h4>
+                integer
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -382,12 +392,14 @@
             <a id="property_username" name="property_username" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$username</h3>
-                <pre class="signature">$username</pre>
-                <p><em></em></p>
+                <pre class="signature">$username : string</pre>
+                <p><em>The username</em></p>
                 
 
 
-                            </article>
+                                <h4>Type</h4>
+                string
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -405,12 +417,14 @@
             <a id="property_password" name="property_password" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$password</h3>
-                <pre class="signature">$password</pre>
-                <p><em></em></p>
-                
+                <pre class="signature">$password : string</pre>
+                <p><em>The password</em></p>
+                <p>If the password is set without a username, then it will not be part of the assembled url.</p>
 
 
-                            </article>
+                                <h4>Type</h4>
+                string
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -428,12 +442,14 @@
             <a id="property_fragment" name="property_fragment" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$fragment</h3>
-                <pre class="signature">$fragment</pre>
-                <p><em></em></p>
+                <pre class="signature">$fragment : string</pre>
+                <p><em>The fragment string, e.g. the #hash</em></p>
                 
 
 
-                            </article>
+                                <h4>Type</h4>
+                string
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -459,23 +475,25 @@
             <article class="method">
                 <h3 class="public ">__construct()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">__construct( <span class="argument">$url</span>)</pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">__construct(string <span class="argument">$url</span>) : object</pre>
+                <p><em>Create a URL object</em></p>
                 
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$url</td>
-                                <td>
+                                <td><p>The url string to be parsed.</p>
 </td>
                             </tr>
                                             </table>
                 
                 
-                            </article>
+                                    <h4>Returns</h4>
+                    object
+                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -494,21 +512,30 @@
             <article class="method">
                 <h3 class="public ">parse()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">parse( <span class="argument">$url</span>)</pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">parse(string <span class="argument">$url</span>)</pre>
+                <p><em>Parse an existing URL</em></p>
                 
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$url</td>
-                                <td>
+                                <td><p>The url to be parsed. Cannot be blank.</p>
 </td>
                             </tr>
                                             </table>
                 
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\Exception</dt>
+                            <dd><p>if the type is not a string.</p>
+</dd>
+                                                    <dt>\Exception</dt>
+                            <dd><p>if the string is empty.</p>
+</dd>
+                                                                    </dl>
                 
                             </article>
         </div>
@@ -529,14 +556,22 @@
             <article class="method">
                 <h3 class="public ">assemble()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">assemble()</pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">assemble() : string</pre>
+                <p><em>Assemble the URL string.</em></p>
                 
 
 
                 
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\Exception</dt>
+                            <dd><p>if no host is defined.</p>
+</dd>
+                                                                    </dl>
                 
-                            </article>
+                                    <h4>Returns</h4>
+                    string
+                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -555,23 +590,23 @@
             <article class="method">
                 <h3 class="public ">addQueryString()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">addQueryString( <span class="argument">$key</span>,  <span class="argument">$value</span>)</pre>
-                <p><em></em></p>
-                
+                <pre class="signature" style="margin-right: 54px;">addQueryString(string <span class="argument">$key</span>, mixed <span class="argument">$value</span>)</pre>
+                <p><em>Add a query string to the list.</em></p>
+                <p>If called multiple times with the same key, the value will be turned into an array of values.</p>
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$key</td>
-                                <td>
+                                <td><p>The key in the query string.</p>
 </td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>mixed</td>
                                 <td>$value</td>
-                                <td>
+                                <td><p>The value. Can be a string or an array of strings.</p>
 </td>
                             </tr>
                                             </table>
@@ -596,17 +631,17 @@
             <article class="method">
                 <h3 class="public ">removeQueryString()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">removeQueryString( <span class="argument">$key</span>)</pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">removeQueryString(string <span class="argument">$key</span>)</pre>
+                <p><em>Remove a query string from the list.</em></p>
                 
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$key</td>
-                                <td>
+                                <td><p>The key to remove.</p>
 </td>
                             </tr>
                                             </table>
@@ -631,14 +666,16 @@
             <article class="method">
                 <h3 class="public ">__toString()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">__toString()</pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">__toString() : string</pre>
+                <p><em>Magic function to allow this class to be assigned as a string.</em></p>
                 
 
 
                 
                 
-                            </article>
+                                    <h4>Returns</h4>
+                    string
+                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -700,9 +737,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on 
-Warning: date_default_timezone_get(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /usr/local/Cellar/php54/5.4.19/lib/php/phpDocumentor/vendor/twig/twig/lib/Twig/Extension/Core.php on line 66
-September 24th, 2013 at 16:06.
+                    on September 24th, 2013 at 11:39.
                 </section>
             </section>
         </section>
