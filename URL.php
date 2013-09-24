@@ -1,4 +1,12 @@
 <?php
+/**
+ * The primary file for the URL handling class.
+ *
+ * @author William Johnston <wjohnston@mpr.org>
+ * @copyright 2013 American Public Media Group
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
 
 /**
 * URL handling class.
@@ -33,7 +41,7 @@ class URL
      *
      * Can be set directly or via the addQueryString() and removeQueryString() methods. If the format array('key' => 'value'). The value can be an array.
      *
-     * @var array
+     * @var mixed[]
      */
     public $query = array();
 
@@ -84,6 +92,8 @@ class URL
      * Parse an existing URL
      *
      * @param string $url The url to be parsed. Cannot be blank.
+     * @throws Exception if the type is not a string.
+     * @throws Exception if the string is empty.
      */
     public function parse($url)
     {
@@ -127,6 +137,7 @@ class URL
     /**
      * Assemble the URL string.
      *
+     * @throws Exception if no host is defined.
      * @return string
      */
     public function assemble()
